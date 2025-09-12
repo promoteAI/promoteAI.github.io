@@ -1,4 +1,5 @@
 ---
+title: 生成式AI详解
 abbrlink: 1
 ---
 ## Chapter 5. Paint
