@@ -2,36 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://promoteai.com/friends/404.html</loc>
+    <loc>http://promoteai.com/2023/05/12/sheng-cheng-shi-ai-xiang-jie/</loc>
     
-    <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promoteai.com/friends/index.html</loc>
-    
-    <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promoteai.com/contact/index.html</loc>
-    
-    <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promoteai.com/about/index.html</loc>
-    
-    <lastmod>2025-09-12</lastmod>
+    <lastmod>2025-09-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +13,7 @@
   <url>
     <loc>http://promoteai.com/tags/index.html</loc>
     
-    <lastmod>2025-09-12</lastmod>
+    <lastmod>2025-09-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,25 +22,7 @@
   <url>
     <loc>http://promoteai.com/categories/index.html</loc>
     
-    <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promoteai.com/2023/05/12/sheng-cheng-shi-ai-xiang-jie/</loc>
-    
-    <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://promoteai.com/2023/03/21/hello-world/</loc>
-    
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2025-09-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,12 +31,19 @@
 
   <url>
     <loc>http://promoteai.com/</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
 
+  
+  <url>
+    <loc>http://promoteai.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

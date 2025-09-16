@@ -1,9 +1,5 @@
-http://promoteai.com/friends/404.html
-http://promoteai.com/friends/index.html
-http://promoteai.com/contact/index.html
-http://promoteai.com/about/index.html
+http://promoteai.com/2023/05/12/sheng-cheng-shi-ai-xiang-jie/
 http://promoteai.com/tags/index.html
 http://promoteai.com/categories/index.html
-http://promoteai.com/2023/05/12/sheng-cheng-shi-ai-xiang-jie/
-http://promoteai.com/2023/03/21/hello-world/
 http://promoteai.com/
+http://promoteai.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/

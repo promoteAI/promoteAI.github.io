@@ -1,1175 +1,411 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="分类, 人工智能, AI">
-    <meta name="description" content="这是属于陈汉江的个人博客">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>分类 | promoteAI</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    
-
-
-    <!-- bg-cover style     -->
-
-
-
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
-
-
-
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
-
-
-
-
-    
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
-
-
-
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-<meta name="generator" content="Hexo 7.0.0-rc1">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">promoteAI</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Movies</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Books</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/galleries">
-          
-          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Galleries</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">promoteAI</div>
-        <div class="logo-desc">
-            
-            这是属于陈汉江的个人博客
-            
-        </div>
-    </div>
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/movies " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Movies</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/books " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Books</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/galleries " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Galleries</span>
-                  </a>
-                </li>
-              
-            </ul>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>分类 | promoteAI</title><meta name="keywords" content="人工智能, AI"><meta name="author" content="陈汉江"><meta name="copyright" content="陈汉江"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="referrer" content="no-referrer"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="分类"><meta name="application-name" content="分类"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="website"><meta property="og:title" content="分类"><meta property="og:url" content="http://promoteai.com/categories/index.html"><meta property="og:site_name" content="promoteAI"><meta property="og:description" content="分类"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta property="article:author" content="陈汉江"><meta property="article:tag" content="人工智能, AI"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta name="description" content="分类"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://promoteai.com/categories/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 陈汉江","link":"链接: ","source":"来源: promoteAI","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
     }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'promoteAI',
+  title: '分类',
+  postAI: '',
+  pageFillDescription: '分类',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-09-16 19:03:49',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
         }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-        
-    </nav>
-    
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">categories</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<main class="post-container content">
-
-    
-    <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                </div>
-            </div>
-
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-09-12
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">陈汉江</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="http://promoteai.com/categories/index.html">http://promoteai.com/categories/index.html</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">陈汉江</a>
-                    !
-                </span>
-            </div>
-        
-    </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
       }
-    </script>
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-                <div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/categories/index.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="categories">
-                        
-                        <span class="card-title">categories</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            陈汉江
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/categories/index.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="categories">
-                        
-                        <span class="card-title">categories</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            陈汉江
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
-
-    <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2025</span>
-            
-            <a href="/about" target="_blank">陈汉江</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            
-            <br>
-            
-            
-            
-                
-            
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
-            
-            <br>
-
-            <!-- 运行天数提醒. -->
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 白天和黑夜主题 -->
-<div class="stars-con">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>  
-</div>
-
-<script>
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
-        setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
-            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
-            setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-                $(this).remove()
-            })
-            }, 2e3)
-        })
-    }
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    
-
-    
-    
-    
-
-    <!-- 雪花特效 -->
-    
-
-    <!-- 鼠标星星特效 -->
-    
-
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
         }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
 
+        document.head.appendChild(script)
+      })
     
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
 
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0-rc1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
 
-    <!--腾讯兔小巢-->
-    
-    
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://gitee.com/promoteAI/mkdown-images/tree/master/imgs" title="图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="图床"/><span class="back-menu-item-text">图床</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">promoteAI</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout hide-aside" id="content-inner"><div id="page"><h1 class="page-title">分类</h1><div id="tag"><div class="category-lists" id="tag-page-tags">
+      <a href="/categories/人工智能/" id="/categories/人工智能/">
+        <span class="tags-punctuation">#</span>人工智能
+        <span class="tagsPageCount">1</span>
+      </a>
+    </div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2025 By <a class="footer-bar-link" href="/" title="陈汉江" target="_blank">陈汉江</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://gitee.com/promoteAI/mkdown-images/tree/master/imgs" title="图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="图床"/><span class="back-menu-item-text">图床</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
 
-    
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
 
-    
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 陈汉江 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
 
-</body>
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
 
-</html>
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.cbd.int/mathjax@3.2.2/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/katex@0.16.0/dist/katex.min.css"><script src="https://cdn.cbd.int/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    anzhiyu.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><input type="hidden" name="page-type" id="page-type" value="categories"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
