@@ -1,6 +1,6 @@
 ---
 title: 生成式AI详解
-abbrlink: 1
+categories: 人工智能
 ---
 ## Chapter 5. Paint
 
