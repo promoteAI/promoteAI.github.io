@@ -20,7 +20,7 @@
     "version": "7.0.0-rc1"
   },
   "dependencies": {
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "hexo": "^7.0.0-rc1",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-github-emojis": "^3.0.5",
