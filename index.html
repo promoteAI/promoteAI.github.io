@@ -46,7 +46,7 @@
       css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
     }
   },
-  isPhotoFigcaption: true,
+  isPhotoFigcaption: false,
   islazyload: true,
   isAnchor: true,
   shortcutKey: undefined,
@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-09-16 19:14:00',
+  postUpdate: '2025-09-17 10:05:53',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -242,7 +242,7 @@ initMourn();</script><div class="page" id="body-wrap"><header class="not-top-img
         人工智能
       </a>
     </div>
-    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/2023/05/12/sheng-cheng-shi-ai-xiang-jie/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">人工智能</div><span class="newPost">最新</span><a class="unvisited-post" href="/2023/05/12/sheng-cheng-shi-ai-xiang-jie/" title="生成式AI详解">未读</a></div><a class="article-title" href="/2023/05/12/sheng-cheng-shi-ai-xiang-jie/" title="生成式AI详解">生成式AI详解</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2023-05-12T04:30:27.816Z" title="发表于 2023-05-12 12:30:27" time="2023-05-12 12:30:27">2023-05-12</time><time class="time_hidden" datetime="2025-09-16T11:13:22.197Z" title="更新于 2025-09-16 19:13:22" time="2025-09-16 19:13:22">2025-09-16</time></span></div><div class="content">Chapter 5. Paint到目前为止，我们已经探索了各种训练模型生成新样本的方法，只需要给定我们想要模仿的训练数据集。我们将其应用于几个数据集，并看到在每种情况下，VAEs和GANs如何能够学习潜在空间和原始像素空间之间的映射。通过从潜空间的分布中采样，我们可以使用生成模型将该向量映射到像素空间中的新图像。
+    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/2023/05/12/sheng-cheng-shi-ai-xiang-jie/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">人工智能</div><span class="newPost">最新</span><a class="unvisited-post" href="/2023/05/12/sheng-cheng-shi-ai-xiang-jie/" title="生成式AI详解">未读</a></div><a class="article-title" href="/2023/05/12/sheng-cheng-shi-ai-xiang-jie/" title="生成式AI详解">生成式AI详解</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2023-05-12T04:30:27.816Z" title="发表于 2023-05-12 12:30:27" time="2023-05-12 12:30:27">2023-05-12</time><time class="time_hidden" datetime="2025-09-16T11:21:13.360Z" title="更新于 2025-09-16 19:21:13" time="2025-09-16 19:21:13">2025-09-16</time></span></div><div class="content">Chapter 5. Paint到目前为止，我们已经探索了各种训练模型生成新样本的方法，只需要给定我们想要模仿的训练数据集。我们将其应用于几个数据集，并看到在每种情况下，VAEs和GANs如何能够学习潜在空间和原始像素空间之间的映射。通过从潜空间的分布中采样，我们可以使用生成模型将该向量映射到像素空间中的新图像。
 请注意，到目前为止，我们看到的所有示例都是从头开始生成新的观察结果的，也就是说，除了从潜在空间中采样的随机潜在向量用于生成图像外，没有其他输入。生成模型的另一个应用是在风格迁移领域。本文的目标是建立一个模型，可以转换输入的基图像，以便给人一种它与给定的一组风格图像来自同一集合的印象。这种技术有明显的商业应用，现在被用于计算机图形软件、计算机游戏设计和移动电话应用程序。图5-1展示了其中的一些例子。
 
 在本章中，你将学习如何构建两种不同类型的风格迁移模型(CycleGAN和Neural style transfer)，并将这些技术应用于你自己的照片和艺术品。我们将从参观一家水果和蔬菜店开始，那里的一切并不像看上去那样……
