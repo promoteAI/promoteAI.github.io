@@ -109,7 +109,7 @@ theme: anzhiyu
 deploy:
   type: git
   repo: git@github.com:promoteAI/promoteAI.github.io.git
-  branch: master
+  branch: gh-pages
 
 # 内容搜索
 search:
