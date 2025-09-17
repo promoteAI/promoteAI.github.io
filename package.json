@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.9",
-    "hexo": "^7.0.0-rc1",
+    "hexo": "^8.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-github-emojis": "^3.0.5",
     "hexo-generator-archive": "^0.1.4",
