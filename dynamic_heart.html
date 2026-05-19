@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#170813" />
+  <meta name="description" content="团团，520快乐。送你一颗会发光的爱心。" />
+  <title>团团，520快乐</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(255, 84, 135, 0.22), transparent 32%),
+        radial-gradient(circle at 20% 20%, rgba(255, 190, 210, 0.2), transparent 26%),
+        linear-gradient(135deg, #130914 0%, #211126 45%, #090611 100%);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      touch-action: manipulation;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .message-layer {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      user-select: none;
+      z-index: 2;
+    }
+
+    .gift-cover {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      background:
+        radial-gradient(circle at 50% 34%, rgba(255, 116, 162, 0.42), transparent 30%),
+        radial-gradient(circle at 20% 20%, rgba(255, 226, 236, 0.18), transparent 28%),
+        linear-gradient(145deg, rgba(26, 8, 22, 0.98), rgba(65, 13, 38, 0.96));
+      color: #fff5f8;
+      z-index: 6;
+      text-align: center;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+
+    .gift-cover.opened {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .gift-content {
+      width: min(88vw, 460px);
+    }
+
+    .gift-to {
+      margin: 0 0 12px;
+      font-size: clamp(18px, 5vw, 28px);
+      font-weight: 700;
+      color: #ffdce8;
+      text-shadow: 0 0 18px rgba(255, 84, 142, 0.8);
+    }
+
+    .gift-title {
+      margin: 0 0 26px;
+      font-size: clamp(34px, 13vw, 72px);
+      line-height: 1.1;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.82),
+        0 0 34px rgba(255, 46, 118, 0.82),
+        0 0 78px rgba(255, 0, 88, 0.58);
+      animation: coverPulse 2.2s ease-in-out infinite;
+    }
+
+    .open-button {
+      width: min(280px, 76vw);
+      min-height: 52px;
+      border: 1px solid rgba(255, 233, 241, 0.72);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffffff, #ffd2e1 46%, #ff4f8d);
+      color: #7c0b35;
+      box-shadow:
+        0 12px 38px rgba(255, 61, 126, 0.36),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      cursor: pointer;
+      font: inherit;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .open-button:active {
+      transform: scale(0.98);
+    }
+
+    .floating-message {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      color: hsl(var(--hue), 100%, 74%);
+      font-size: var(--size);
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.6) rotate(var(--rotate));
+      text-shadow:
+        0 0 8px hsla(var(--hue), 100%, 72%, 0.95),
+        0 0 22px hsla(var(--hue), 100%, 65%, 0.72),
+        0 0 46px hsla(var(--hue), 100%, 58%, 0.42);
+      animation:
+        floatText var(--duration) ease-in-out var(--delay) infinite,
+        colorShift 3.8s linear var(--delay) infinite;
+      mix-blend-mode: screen;
+    }
+
+    .main-message {
+      --x: 50%;
+      --y: 51%;
+      --size: clamp(42px, 9vw, 118px);
+      --rotate: 0deg;
+      --duration: 2.8s;
+      --delay: 0s;
+      z-index: 3;
+      color: #fff2f8;
+      animation:
+        centerPulse 2.6s ease-in-out infinite,
+        colorShift 4.2s linear infinite;
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.9),
+        0 0 28px rgba(255, 63, 126, 0.95),
+        0 0 70px rgba(255, 0, 96, 0.72);
+    }
+
+    @keyframes floatText {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(26px) scale(0.5) rotate(var(--rotate));
+        filter: blur(2px);
+      }
+
+      16%,
+      72% {
+        opacity: var(--alpha);
+        filter: blur(0);
+      }
+
+      50% {
+        transform: translate(-50%, -50%) translate(var(--drift), -20px) scale(1.06) rotate(calc(var(--rotate) * -0.4));
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-58px) scale(0.72) rotate(var(--rotate));
+        filter: blur(2px);
+      }
+    }
+
+    @keyframes centerPulse {
+      0%,
+      100% {
+        opacity: 0.92;
+        transform: translate(-50%, -50%) scale(0.95);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+
+    @keyframes colorShift {
+      from {
+        filter: hue-rotate(0deg) saturate(1.2);
+      }
+
+      to {
+        filter: hue-rotate(360deg) saturate(1.6);
+      }
+    }
+
+    @keyframes coverPulse {
+      0%,
+      100% {
+        transform: scale(0.98);
+      }
+
+      50% {
+        transform: scale(1.04);
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="heart"></canvas>
+  <div class="gift-cover" id="giftCover">
+    <div class="gift-content">
+      <p class="gift-to">To 团团</p>
+      <h1 class="gift-title">520快乐</h1>
+      <button class="open-button" id="openGift" type="button">点开这颗爱心</button>
+    </div>
+  </div>
+  <div class="message-layer" id="messageLayer">
+    <div class="floating-message main-message">团团，520快乐</div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("heart");
+    const ctx = canvas.getContext("2d");
+    const messageLayer = document.getElementById("messageLayer");
+    const giftCover = document.getElementById("giftCover");
+    const openGift = document.getElementById("openGift");
+    const messageText = "团团，520快乐";
+
+    let width = 0;
+    let height = 0;
+    let dpr = 1;
+    let heartPoints = [];
+    let particles = [];
+    let resizeTimer = 0;
+
+    function heartPoint(t, scale) {
+      const x = 16 * Math.pow(Math.sin(t), 3);
+      const y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+      return {
+        x: x * scale,
+        y: -y * scale
+      };
+    }
+
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const scale = Math.min(width, height) / 42;
+      heartPoints = [];
+      for (let i = 0; i < 1600; i++) {
+        const t = (Math.PI * 2 * i) / 1600;
+        const base = heartPoint(t, scale);
+        heartPoints.push({
+          x: width / 2 + base.x,
+          y: height / 2 - scale * 1.5 + base.y
+        });
+      }
+
+      particles = Array.from({ length: Math.min(900, Math.floor(width * height / 1150)) }, () => makeParticle(true));
+    }
+
+    function makeParticle(randomizeAge = false) {
+      const target = heartPoints[Math.floor(Math.random() * heartPoints.length)];
+      const angle = Math.random() * Math.PI * 2;
+      const distance = 120 + Math.random() * Math.max(width, height) * 0.45;
+
+      return {
+        x: width / 2 + Math.cos(angle) * distance,
+        y: height / 2 + Math.sin(angle) * distance,
+        tx: target.x,
+        ty: target.y,
+        size: 0.8 + Math.random() * 2.4,
+        speed: 0.012 + Math.random() * 0.028,
+        hue: 338 + Math.random() * 24,
+        alpha: 0.35 + Math.random() * 0.65,
+        spin: Math.random() * Math.PI * 2,
+        age: randomizeAge ? Math.random() * 120 : 0
+      };
+    }
+
+    function buildMessages() {
+      const oldMessages = messageLayer.querySelectorAll(".floating-message:not(.main-message)");
+      oldMessages.forEach((message) => message.remove());
+
+      const count = Math.min(42, Math.max(22, Math.floor((window.innerWidth * window.innerHeight) / 26000)));
+      for (let i = 0; i < count; i++) {
+        const span = document.createElement("span");
+        span.className = "floating-message";
+        span.textContent = messageText;
+        span.style.setProperty("--x", `${6 + Math.random() * 88}%`);
+        span.style.setProperty("--y", `${5 + Math.random() * 90}%`);
+        span.style.setProperty("--size", `${16 + Math.random() * Math.min(34, window.innerWidth / 22)}px`);
+        span.style.setProperty("--hue", `${320 + Math.random() * 86}`);
+        span.style.setProperty("--rotate", `${-18 + Math.random() * 36}deg`);
+        span.style.setProperty("--duration", `${3.6 + Math.random() * 4.8}s`);
+        span.style.setProperty("--delay", `${-Math.random() * 7.5}s`);
+        span.style.setProperty("--alpha", `${0.42 + Math.random() * 0.48}`);
+        span.style.setProperty("--drift", `${-26 + Math.random() * 52}px`);
+        messageLayer.appendChild(span);
+      }
+    }
+
+    function drawHeartCore(time) {
+      const pulse = 1 + Math.sin(time * 0.006) * 0.045;
+      const cx = width / 2;
+      const cy = height / 2 - Math.min(width, height) / 28;
+      const scale = Math.min(width, height) / 42 * pulse;
+
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.beginPath();
+      for (let i = 0; i <= 360; i++) {
+        const t = (Math.PI * 2 * i) / 360;
+        const point = heartPoint(t, scale);
+        if (i === 0) {
+          ctx.moveTo(point.x, point.y);
+        } else {
+          ctx.lineTo(point.x, point.y);
+        }
+      }
+      ctx.closePath();
+
+      const gradient = ctx.createRadialGradient(0, -scale * 3, scale * 2, 0, 0, scale * 18);
+      gradient.addColorStop(0, "rgba(255, 220, 232, 0.98)");
+      gradient.addColorStop(0.36, "rgba(255, 73, 125, 0.92)");
+      gradient.addColorStop(1, "rgba(172, 18, 68, 0.88)");
+
+      ctx.shadowColor = "rgba(255, 63, 120, 0.9)";
+      ctx.shadowBlur = 34;
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "rgba(255, 235, 242, 0.5)";
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function drawParticle(particle, time) {
+      particle.age += 1;
+
+      const drift = Math.sin(time * 0.002 + particle.spin) * 0.75;
+      particle.x += (particle.tx - particle.x) * particle.speed + drift * 0.08;
+      particle.y += (particle.ty - particle.y) * particle.speed + Math.cos(time * 0.002 + particle.spin) * 0.08;
+
+      const close = Math.hypot(particle.tx - particle.x, particle.ty - particle.y);
+      if (close < 5 || particle.age > 420) {
+        Object.assign(particle, makeParticle());
+      }
+
+      ctx.beginPath();
+      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(${particle.hue}, 100%, ${62 + Math.sin(time * 0.01 + particle.spin) * 10}%, ${particle.alpha})`;
+      ctx.shadowColor = `hsla(${particle.hue}, 100%, 70%, 0.8)`;
+      ctx.shadowBlur = 12;
+      ctx.fill();
+    }
+
+    function drawSparkles(time) {
+      ctx.save();
+      ctx.shadowBlur = 10;
+      for (let i = 0; i < 34; i++) {
+        const t = time * 0.00035 + i * 0.63;
+        const radius = Math.min(width, height) * (0.25 + (i % 7) * 0.025);
+        const x = width / 2 + Math.cos(t + i) * radius;
+        const y = height / 2 + Math.sin(t * 1.4 + i * 1.8) * radius * 0.7;
+        const alpha = 0.25 + Math.sin(time * 0.004 + i) * 0.2;
+
+        ctx.beginPath();
+        ctx.arc(x, y, 1 + (i % 3) * 0.7, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 222, 233, ${alpha})`;
+        ctx.shadowColor = "rgba(255, 119, 164, 0.8)";
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+
+    function animate(time) {
+      ctx.clearRect(0, 0, width, height);
+      ctx.globalCompositeOperation = "lighter";
+      drawSparkles(time);
+      for (const particle of particles) {
+        drawParticle(particle, time);
+      }
+      drawHeartCore(time);
+      ctx.globalCompositeOperation = "source-over";
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener("resize", () => {
+      resize();
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(buildMessages, 160);
+    });
+    openGift.addEventListener("click", () => {
+      giftCover.classList.add("opened");
+    });
+    resize();
+    buildMessages();
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
